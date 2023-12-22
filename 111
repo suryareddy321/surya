@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Tutoring</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Online Tutoring Platform</h1>
+        <div id="login-section">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="tutoring-section" style="display: none;">
+            <h2>One-on-One Tutoring</h2>
+            <p>Connect with your tutor:</p>
+            <button onclick="startTutoring()">Start Tutoring</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Class Management</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Welcome to the Class Management System</h1>
+        <div id="student-section">
+            <h2>Student Section</h2>
+            <p>View and join your class details:</p>
+            <button onclick="viewClassDetails()">View Class Details</button>
+            <button onclick="joinClass()">Join Class</button>
+        </div>
+        <div id="tutor-section">
+            <h2>Tutor Section</h2>
+            <p>Access class information and initiate classes:</p>
+            <button onclick="accessClassInformation()">Access Class Information</button>
+            <button onclick="initiateClass()">Initiate Class</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Class Scheduling System</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Class Scheduling System</h1>
+        <div id="upload-section">
+            <h2>Upload Timetable</h2>
+            <input type="file" accept=".doc, .pdf, .xls, .csv" id="timetable-file">
+            <button onclick="uploadTimetable()">Upload Timetable</button>
+        </div>
+        <div id="preferences-section">
+            <h2>Set Preferences</h2>
+            <label for="preferred-time">Preferred Time:</label>
+            <input type="text" id="preferred-time" placeholder="Enter your preferred time">
+            <button onclick="setPreferences()">Set Preferences</button>
+        </div>
+        <div id="calendar-section" style="display: none;">
+            <h2>Class Calendar</h2>
+            <!-- Display the class calendar here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- ... (previous HTML code) ... -->
+<div id="attendance-section" style="display: none;">
+    <h2>Attendance</h2>
+    <button onclick="captureAttendance()">Capture Attendance</button>
+    <div id="attendance-list"></div>
+</div>
+<!-- ... (remaining HTML code) ... -->
+
+<!-- ... (previous HTML code) ... -->
+<div id="upload-materials-section">
+    <h2>Upload Materials</h2>
+    <input type="file" id="materials-file">
+    <button onclick="uploadMaterials()">Upload Materials</button>
+</div>
+<!-- ... (remaining HTML code) ... -->
